@@ -74,4 +74,53 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** gold **/
+  --ion-color-gold: #e08218;
+  --ion-color-gold-rgb: 255, 215, 0;
+  --ion-color-gold-contrast: #FFFFFF;
+  --ion-color-gold-contrast-rgb: 0, 0, 0;
+  --ion-color-gold-shade: #e26816;
+  --ion-color-gold-tint: #e26816;
+
+}
+
+
+.ion-color-gold {
+  --ion-color-base: var(--ion-color-gold) !important;
+  --ion-color-base-rgb: var(--ion-color-gold-rgb) !important;
+  --ion-color-contrast: var(--ion-color-gold-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-gold-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-gold-shade) !important;
+  --ion-color-tint: var(--ion-color-gold-tint) !important;
+  }
+
+ion-item {
+  --highlight-color-valid: transparent;
+  --highlight-color-invalid: transparent;
+  --highlight-color-focused: var(--ion-color-light);
+}
+
+.mgtop10 {
+  margin-top: 10px;
+}
+
+.mgtop20 {
+  margin-top: 20px;
+}
+
+.mgbot10 {
+  margin-top: 10px;
+}
+
+.mgbot20 {
+  margin-top: 20px;
+}
+
+.mgleft20 {
+  margin-left: 20px;
+}
+
+.mgright20 {
+  margin-right: 20px;
 }

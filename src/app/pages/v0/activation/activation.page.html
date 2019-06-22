@@ -1,0 +1,24 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>Verifikasi</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<p class="labeldaftar-verifikasi">
+		Kami telah mengirimkan kode verifikasi ke {{opsi_aktivasi}}. Gunakan kode tersebut untuk verifikasi.
+	</p>
+
+	<ion-item class="mgleft20 mgright20">
+		<ion-input type="text" placeholder="Kode verifikasi" [(ngModel)]="kode_verifikasi"></ion-input>
+	</ion-item>
+
+	<ion-button expand="full" padding color="gold" (click)="verifikasiKode()">Kirim</ion-button>
+	
+	<p class="labeldaftar-kulang">
+		<span>Kirim ulang kode verifikasi?</span>
+	</p>
+</ion-content>

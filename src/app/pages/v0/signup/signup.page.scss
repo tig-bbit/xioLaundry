@@ -1,0 +1,59 @@
+ion-header ion-toolbar {
+  --background: #10dcc3;
+  color: #FFFFFF;
+}
+
+.gridoption {
+  border-bottom:1px solid #e1e1e1;
+}
+
+.opsidaftar {
+  padding: 6px;
+  text-align:center;
+}
+
+.gridoption .no-hp.active,
+.gridoption .email.active {
+  color: #10dcc3;
+  border-bottom: 2px solid #10dcc3;
+  padding-bottom:12px;
+  margin-bottom:-12px;
+}
+
+.no-hp {
+  color: #81ecdf;
+  margin-left:-10px;
+}
+
+.email {
+  color: #81ecdf;
+  margin-right:-10px;
+}
+
+ion-footer ion-button {
+  --box-shadow: none;
+}
+
+.labeldaftar-hukum {
+  font-size: 13px;
+  color: #999;
+}
+
+.labeldaftar-hukum ion-icon {
+  font-size: 15px;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+
+.labeldaftar-syaratprivasi {
+  font-size: 13px;
+  color: #999;
+}
+
+.displaynone {
+  display:none;
+}
+
+.spandf {
+  color: #3880ff;  
+}

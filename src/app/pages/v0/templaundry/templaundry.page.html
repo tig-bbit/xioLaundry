@@ -1,0 +1,90 @@
+<ion-header no-border *ngIf=" actionslide !='tiga'">
+  <ion-toolbar>
+    <ion-title> Data Pemilik Usaha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<div class="{{displaynone}}">
+		<ion-list>
+			<ion-item>
+				<ion-input type="text" placeholder="Nama lengkap" [(ngModel)]="nama_lengkap"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label class="jk">Jenis kelamin</ion-label>
+				<ion-select interface="popover" placeholder="Select" [(ngModel)]="jenis_kelamin">
+			    	<ion-select-option value="Pria">Pria</ion-select-option>
+			    	<ion-select-option value="Wanita">Wanita</ion-select-option>
+			    </ion-select>
+			</ion-item>
+			<ion-item>
+				<ion-input type="number" placeholder="Masukan no KTP" [(ngModel)]="no_ktp"></ion-input>
+			</ion-item>
+			<ion-item class="mgtopimg" lines="none">
+        		<button ion-button block color="none" (click)="takePhoto()">
+        			<img src="http://localhost/_claundry/server_laundryapp/images/other/foto-img.png">
+        		</button>
+      		</ion-item>
+
+			<ion-item lines="none">
+				<p class="labeldaftar-two">
+					Foto KTP (Kartu Tanda Penduduk) 
+				</p>
+			</ion-item>
+			<ion-item class="mgtopimg" lines="none">
+        		<button ion-button block color="none" (click)="takePhoto()">
+        			<img src="http://localhost/_claundry/server_laundryapp/images/other/foto-img.png">
+        		</button>
+      		</ion-item>
+			<ion-item lines="none">
+				<p class="labeldaftar-two">
+					Foto Selfi Dengan KTP (Kartu Tanda Penduduk) 
+				</p>
+			</ion-item>
+		</ion-list>
+	</div>
+
+	<div class="{{displaynone2}}">
+		<ion-list>
+			<ion-item>
+				<ion-input type="text" placeholder="Nama usaha laundry" [(ngModel)]="nama_usaha"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-textarea placeholder="Alamat usaha laundry..." [(ngModel)]="alamat_usaha"></ion-textarea>
+			</ion-item>
+			<ion-item class="mgtopimg" lines="none">
+        		<button ion-button block color="none" (click)="takePhoto()">
+        			<img src="http://localhost/_claundry/server_laundryapp/images/other/foto-img.png">
+        		</button>
+      		</ion-item>
+			<ion-item lines="none">
+				<p class="labeldaftar-two">
+					Foto Tempat Usaha
+				</p>
+			</ion-item>
+		</ion-list>
+	</div>
+
+	<div class="{{displaynone3}}">
+		<ion-slides pager="false" class="swiper-no-swiping">
+		    <ion-slide class="step-one">
+		        <p class="labelintro-two">Terimakasih telah bergabung dengan Claundry.<br/>Data Anda akan kami proses dalam waktu 5 sampai 10menit kedepan.<br/>Sambil menunggu proses, sebaiknya Anda melakukan persiapan untuk Usaha Laundry Anda.</p>
+		        <ion-button color="primary" (click)="optionStart()">MULAI CLAUNDRY</ion-button>
+		    </ion-slide>
+		</ion-slides>
+	</div>
+</ion-content>
+
+<ion-footer no-padding>
+	<ion-button class="cl-pright" color="none" icon-only (click)="nextSatu()" *ngIf=" actionslide =='satu'">
+		<ion-icon name="arrow-forward"></ion-icon>
+	</ion-button>
+
+	<ion-button class="ipo-cl" color="none" (click)="backSatu()" *ngIf=" actionslide =='dua'">
+		<ion-icon name="arrow-back"></ion-icon>
+	</ion-button>
+	<ion-button class="cl-pright" color="none" icon-only (click)="prosesStore()" *ngIf=" actionslide =='dua'">
+		SELESAI
+	</ion-button>
+</ion-footer>

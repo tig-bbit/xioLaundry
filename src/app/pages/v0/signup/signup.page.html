@@ -1,0 +1,45 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>	Form Agen Laundry</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid class="gridoption">
+		<ion-row class="opsidaftar">
+    		<ion-col class="no-hp {{activehp}} md hydrated" (click)="opsiHp()">No. Handphone</ion-col>
+	    	<ion-col class="email {{activeemail}} md hydrated" (click)="opsiEmail()">Email</ion-col>
+	    </ion-row>
+	</ion-grid>
+
+	<div class="{{displayhp}}">
+		<ion-item>
+			<ion-input type="tel" placeholder="No. Handphone" [(ngModel)]="opsi_hp"></ion-input>
+		</ion-item>
+	</div>
+
+	<div class="{{displayemail}}">
+		<ion-item>
+			<ion-input type="text" placeholder="Email" [(ngModel)]="opsi_email" ></ion-input>
+		</ion-item>
+	</div>
+
+	<ion-item lines="none">
+		<p class="labeldaftar-hukum">
+			<ion-icon name="lock"></ion-icon> Data Anda dilindungi dan tidak disebarluaskan
+		</p>
+	</ion-item>
+
+	<ion-button expand="full" padding color="gold" (click)="aktivasiOpsi()" [disabled]="disableButton">Daftar</ion-button>
+</ion-content>
+
+<ion-footer no-padding no-border>
+	<ion-item lines="none">
+		<p class="labeldaftar-syaratprivasi">
+			Dengan mendaftar, saya menyetujui <span class="spandf">Syarat & Ketentuan</span> dan <span class="spandf">Kebijakan Privasi Claundry</span>. 
+		</p>
+	</ion-item>
+</ion-footer>

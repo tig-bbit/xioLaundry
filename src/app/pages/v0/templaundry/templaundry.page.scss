@@ -1,0 +1,77 @@
+ion-header ion-toolbar {
+  --background: #10dcc3;
+  color: #FFFFFF;
+}
+
+
+.cl-pright {
+  text-align: right;
+  float: right;
+  color: #2b2e35;
+}
+
+.ipo-cl {
+  color: #2b2e35;
+}
+
+ion-footer ion-button {
+  --box-shadow: none;
+}
+
+
+.displaynone {
+  display:none;
+}
+
+.mgtopimg {
+  margin-top:15px;
+}
+
+.labeldaftar-two {
+  font-size: 13px;
+  color: #999;
+}
+
+.spandf {
+  color: #3880ff;  
+}
+
+.jk {
+  color: #999
+}
+
+.btop {
+  border-top: 1px solid #c1c1c1
+}
+
+.mgrow {
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.mgtopimg button {
+  background: #efefef;
+  border-radius: 4px;
+}
+
+.labeldaftar-two-xlg {
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+ion-slide {
+    height: 100vh;
+    flex-direction: column;
+}
+
+.step-one {
+    background: #FFF;
+    color: #333;
+}
+
+.labelintro-two {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}

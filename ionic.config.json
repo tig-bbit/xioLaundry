@@ -1,5 +1,8 @@
 {
   "name": "laundry_appio",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "1774fcff"
 }

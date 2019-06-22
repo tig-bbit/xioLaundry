@@ -1,0 +1,83 @@
+<ion-header no-border>
+  <ion-toolbar class="{{stbgslaundry}} md hydrated">
+    <ion-title>Akun Saya</ion-title>
+    <ion-buttons slot="primary">
+    <ion-button (click)="presentActionSheet()">
+      {{stlaundry}}
+      <ion-icon slot="end" name="more"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="atasheader">
+	<div class="{{stbglaundry}}">
+			<ion-card>
+		    	<ion-item lines="none" class="headbotitem bbotom">
+					<ion-thumbnail slot="start">
+						<img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+				  	</ion-thumbnail>
+				  	<ion-label>
+				  		<span class="weight">Chandra Gustiya</span><br/>
+				  		<span class="np">Agen Laundry</span><br>
+				  		<span class="np npklik" (click)="goProfil()">LIHAT PROFIL SAYA</span>
+				  	</ion-label>
+				</ion-item>
+				<ion-item lines="none" class="headbotitem">
+	    			<ion-icon name="medal" slot="start"></ion-icon>
+	    			<ion-label>GOLD</ion-label>
+            <ion-badge slot="end" color="light"><ion-icon name="star-half"></ion-icon> 4.5</ion-badge>
+				</ion-item>
+			</ion-card>
+	</div>
+
+  <ion-card>
+    <ion-item lines="none" href="javascript:void(0)" (click)="goTagihan()">
+      <ion-icon name="wallet" slot="start"></ion-icon>
+      <ion-label>Tagihan Saya</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none" href="javascript:void(0)" class="bbotom">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>Informasi Akun</ion-label>
+    </ion-item>
+    <ion-item lines="none" href="javascript:void(0)" class="bbotom">
+      <ion-icon name="construct" slot="start"></ion-icon>
+      <ion-label>Pengaturan Laundry</ion-label>
+    </ion-item>
+    <ion-item lines="none" href="javascript:void(0)">
+      <ion-icon name="notifications" slot="start"></ion-icon>
+      <ion-label>Notifikasi</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none" class="bbotom">
+      <ion-icon name="headset" slot="start"></ion-icon>
+      <ion-label>Kontak Support</ion-label>
+    </ion-item>
+    <ion-item lines="none" class="bbotom">
+      <ion-icon name="help-circle-outline" slot="start"></ion-icon>
+      <ion-label>FAQ</ion-label>
+    </ion-item>
+    <ion-item lines="none" class="bbotom">
+      <ion-icon name="paper" slot="start"></ion-icon>
+      <ion-label>Syarat & Ketentuan</ion-label>
+    </ion-item>  
+    <ion-item lines="none">
+      <ion-icon name="ribbon" slot="start"></ion-icon>
+      <ion-label>Nilai Kami</ion-label>
+      <ion-badge slot="end" color="light">1.0.0</ion-badge>
+    </ion-item>  
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none" href="javascript:void(0)" (click)="prosesLogout()">
+      <ion-icon name="exit" slot="start"></ion-icon>
+      <ion-label>Keluar</ion-label>
+    </ion-item>
+  </ion-card>
+		
+</ion-content>

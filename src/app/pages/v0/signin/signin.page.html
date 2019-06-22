@@ -1,0 +1,42 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>	Login Claundry</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid class="gridoption">
+		<ion-row class="opsidaftar">
+    		<ion-col class="no-hp {{activehp}} md hydrated" (click)="opsiHp()">No. Handphone</ion-col>
+	    	<ion-col class="email {{activeemail}} md hydrated" (click)="opsiEmail()">Email</ion-col>
+	    </ion-row>
+	</ion-grid>
+
+	<ion-list>
+		<div class="{{displayhp}}">
+			<ion-item>
+				<ion-input type="tel" placeholder="No. Handphone" [(ngModel)]="opsi_hp"></ion-input>
+			</ion-item>
+			<div>
+				<ion-button expand="full" padding color="primary" (click)="aktivasiOpsi()" [disabled]="disableButton">Verifikasi Nomor</ion-button>
+			</div>
+		</div>
+		<div class="{{displayemail}}">
+			<ion-item>
+				<ion-input type="text" placeholder="Email" [(ngModel)]="opsi_email"></ion-input>
+			</ion-item>
+			<div>
+				<ion-button expand="full" padding color="primary" (click)="aktivasiOpsi()" [disabled]="disableButton">Verifikasi Email</ion-button>
+			</div>
+		</div>
+			<p class="marketing-t1" padding>
+				Anda punya bisnis usaha laundry ? tapi sepi.....<br/> 
+				Claundry solusi terbaik untuk mengembangkan bisnis usaha laundry anda.
+			</p>
+
+			<p class="marketing-t1" padding>
+				Saatnya Indonesia tahu bahwa bisnis usaha laundry anda lah yang terbaik. 
+				<span (click)="optionDaftar()">Buka Laundry Sekarang</span>
+			</p>
+	</ion-list>
+</ion-content>

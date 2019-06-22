@@ -1,0 +1,23 @@
+ion-header ion-toolbar {
+  --background: #10dcc3;
+  color: #FFFFFF;
+}
+
+.labeldaftar-verifikasi {
+  font-size: 13px;
+  color: #333;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.labeldaftar-kulang {
+  font-size: 13px;
+  color: #3880ff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+.md.ion-focusable.hydrated {
+	--padding-start: 0px;
+}
